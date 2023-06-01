@@ -1,0 +1,70 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Symfony\Component\Uid;
+
+class Uuid extends AbstractUid
+{
+    /**
+     * @pure
+     */
+    public function __construct(string $uuid, bool $checkVariant = false)
+    {
+    }
+
+    /**
+     * @pure
+     */
+    public static function fromString(string $uuid): static
+    {
+    }
+
+    final public static function v1(): UuidV1
+    {
+    }
+
+    final public static function v3(self $namespace, string $name): UuidV3
+    {
+    }
+
+    final public static function v4(): UuidV4
+    {
+    }
+
+    final public static function v5(self $namespace, string $name): UuidV5
+    {
+    }
+
+    final public static function v6(): UuidV6
+    {
+    }
+
+    final public static function v7(): UuidV7
+    {
+    }
+
+    final public static function v8(string $uuid): UuidV8
+    {
+    }
+
+    public static function isValid(string $uuid): bool
+    {
+    }
+
+    public function toBinary(): string
+    {
+    }
+
+    public function toRfc4122(): string
+    {
+    }
+
+    public function compare(AbstractUid $other): int
+    {
+    }
+
+    private static function format(string $uuid, string $version): string
+    {
+    }
+}
